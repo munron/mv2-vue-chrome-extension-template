@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "アプリ名",
+  "short_name": "短縮名",
+  "description": "説明",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "js/chunk-vendors.js",
+        "js/app.js",
+        "popup/js/chunk-vendors.js",
+        "popup/js/app.js"
+      ],
+      "css": [
+        "css/app.css",
+        "popup/css/app.css"
+      ]
+    }
+  ],
+  "background": { 
+    "scripts": [
+    ]
+  },
+  "permissions": [
+    "storage",
+    "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "*.png"
+  ]
+}
+
