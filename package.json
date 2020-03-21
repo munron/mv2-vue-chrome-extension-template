@@ -9,7 +9,9 @@
     "zip": "run(){ zip -r -X releases/extension.zip dist; }; run"
   },
   "dependencies": {
+    "@types/chart.js": "^2.9.16",
     "@types/chrome": "0.0.95",
+    "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
     "cpx": "^1.5.0",
     "node-sass": "^4.13.1",
