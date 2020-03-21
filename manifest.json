@@ -5,12 +5,12 @@
   "description": "説明",
   "version": "1.0.0",
   "icons": {
-    "16": "icons/16.png",
-    "48": "icons/48.png",
-    "128": "icons/128.png"
+    "16": "./16.png",
+    "48": "./48.png",
+    "128": "./128.png"
   },
   "browser_action": {
-    "default_popup": "popup/index.html"
+    "default_popup": "index.html"
   },
   "content_scripts": [
     {
@@ -18,19 +18,21 @@
         "https://*/*"
       ],
       "js": [
-        "js/chunk-vendors.js",
-        "js/app.js",
-        "popup/js/chunk-vendors.js",
-        "popup/js/app.js"
+        "./js/chunk-vendors.js",
+        "./js/app.js",
+        "./js/content-script.js",
+        "./js/popup.js"
       ],
       "css": [
-        "css/app.css",
-        "popup/css/app.css"
+        "./css/app.css",
+        "./css/content-script.css",
+        "./css/popup.css"
       ]
     }
   ],
   "background": { 
     "scripts": [
+      "./js/background.js"
     ]
   },
   "permissions": [

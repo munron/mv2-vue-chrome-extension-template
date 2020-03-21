@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>Welcome to Your Vue.js + TypeScript Extension</p>
+    <p>Welcome to Your Vue.js + TypeScript + Vue-chart Extension    </p>
   </div>
 </template>
 
