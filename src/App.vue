@@ -1,20 +1,23 @@
 <template>
     <div id="app">
-        <p>Welcome to Your Vue.js + TypeScript + Vue-chart Extension    </p>
+        <p>拡張</p>
+        <chrome-ex-img />
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import ChromeExImg from './components/ChromeExImg.vue';
 
 @Component({
     components: {
+        ChromeExImg,
     },
 })
 export default class App extends Vue {}
 </script>
 
-<style lang="scss">
+<style >
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

@@ -3,7 +3,7 @@ import App from './App.vue';
 
 Vue.config.productionTip = false;
 window.onload = async () => {
-    const searchBar = document.querySelector('.gLFyf.gsfi');
+    const searchBar = document.querySelector('.fin_f_t0_d.fin_f_t1_d');
     if (searchBar) {
         searchBar.insertAdjacentHTML(
             'afterend',

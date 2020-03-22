@@ -13,7 +13,7 @@ import Vue from 'vue';
 export default class App extends Vue {}
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 #popup {
     width: 560px;

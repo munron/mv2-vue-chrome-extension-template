@@ -18,21 +18,18 @@
                 "https://*/*"
             ],
             "js": [
-                "./js/chunk-vendors.js",
-                "./js/app.js",
-                "./js/content-script.js",
-                "./js/popup.js"
+                "./content-script.js",
+                "./popup.js"
             ],
             "css": [
-                "./css/app.css",
-                "./css/content-script.css",
-                "./css/popup.css"
+                "./content-script.css",
+                "./popup.css"
             ]
         }
     ],
     "background": { 
         "scripts": [
-            "./js/background.js"
+            "./background.js"
         ]
     },
     "permissions": [
@@ -41,6 +38,7 @@
     ],
     "web_accessible_resources": [
         "*.png"
-    ]
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
 
