@@ -15,6 +15,7 @@ npm install
 ```
 npm run dev
 ```
+drop dist folder to chrome://extension   
 open [github](https://github.com/)
 
 ### Compiles and minifies for production
