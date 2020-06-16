@@ -1,46 +1,45 @@
 {
-    "manifest_version": 2,
-    "name": "アプリ名",
-    "short_name": "短縮名",
-    "description": "説明",
-    "version": "1.0.0",
-    "icons": {
-        "16": "./16.png",
-        "48": "./48.png",
-        "128": "./128.png"
-    },
-    "browser_action": {
-        "default_popup": "index.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://*/*"
-            ],
-            "js": [
-                "./js/chunk-vendors.js",
-                "./js/app.js",
-                "./js/content-script.js",
-                "./js/popup.js"
-            ],
-            "css": [
-                "./css/app.css",
-                "./css/content-script.css",
-                "./css/popup.css"
-            ]
-        }
-    ],
-    "background": { 
-        "scripts": [
-            "./js/background.js"
-        ]
-    },
-    "permissions": [
-        "storage",
-        "https://*/*"
-    ],
-    "web_accessible_resources": [
-        "*.png"
+  "manifest_version": 2,
+  "name": "アプリ名",
+  "short_name": "短縮名",
+  "description": "説明",
+  "version": "1.0.0",
+  "icons": {
+    "16": "./16.png",
+    "48": "./48.png",
+    "128": "./128.png"
+  },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/*",
+        "https://github.com/*"
+      ],
+      "js": [
+        "./content-script.js",
+        "./popup.js"
+      ],
+      "css": [
+        "./content-script.css",
+        "./popup.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "./background.js"
     ]
+  },
+  "permissions": [
+    "storage",
+    "https://github.com/*/*"
+  ],
+  "web_accessible_resources": [
+    "*.png",
+    "*.gif"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
-

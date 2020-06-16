@@ -1,14 +1,22 @@
 # vue-ts-chrome-extension-template
 
+modern chrome-extension development example
+Vue & TypeScript & Hot-Reload
+
+![hot-reload](./hotreload.gif)
+
 ## Project setup
 ```
 npm install
 ```
 
+
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
+
+▶ open [github](https://github.com/)
 
 ### Compiles and minifies for production
 ```
