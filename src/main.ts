@@ -3,8 +3,8 @@ import App from './App.vue';
 
 Vue.config.productionTip = false;
 window.onload = async () => {
-  const searchBar = document.querySelector('.Header');
-  if (searchBar) {
+  const el = document.querySelector('.Header');
+  if (el) {
     searchBar.insertAdjacentHTML(
       'afterend',
       '<div id="app"></div>',
