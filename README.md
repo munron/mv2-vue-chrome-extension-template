@@ -1,7 +1,9 @@
-# vue-ts-chrome-extension-template
+# mv2-vue-chrome-extension-template
 
 modern chrome-extension development example  
-Vue & TypeScript & Hot-Reload
+ManifestV2 & Vue & TypeScript & Hot-Reload  
+
+→ Manifest V3[https://github.com/munron/mv3-vue-chrome-extension-template](https://github.com/munron/mv3-vue-chrome-extension-template)
 
 ![hot-reload](./hotreload.gif)
 
