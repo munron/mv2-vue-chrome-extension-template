@@ -3,7 +3,7 @@
 modern chrome-extension development example  
 ManifestV2 & Vue & TypeScript & Hot-Reload  
 
-→ Manifest V3[https://github.com/munron/mv3-vue-chrome-extension-template](https://github.com/munron/mv3-vue-chrome-extension-template)
+→ Manifest V3 [https://github.com/munron/mv3-vue-chrome-extension-template](https://github.com/munron/mv3-vue-chrome-extension-template)
 
 ![hot-reload](./hotreload.gif)
 
